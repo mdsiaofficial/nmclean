@@ -4,7 +4,7 @@
   "description": "Recursively find and delete node_modules",
   "main": "index.js",
   "bin": {
-    "nmclean": "./index.js"
+    "nmclean": "index.js"
   },
   "scripts": {
     "start": "node index.js"
