@@ -5,7 +5,7 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
-// Helper to remove a directory and all its contents (like rm -rf)
+//! Helper to remove a directory and all its contents (like rm -rf)
 void remove_recursive(const char *path) {
     struct dirent *entry;
     DIR *dir = opendir(path);
@@ -13,8 +13,9 @@ void remove_recursive(const char *path) {
     if (!dir) return;
 
     while ((entry = readdir(dir)) != NULL) {
-        if (strcmp(entry->d_name, ".") == 0 || strcmp(entry->d_name, "..") == 0)
+        if (strcmp(entry->d_name, ".") == 0 || strcmp(entry->d_name, "..") == 0){
             continue;
+        }
 
         char full_path[1024];
         snprintf(full_path, sizeof(full_path), "%s/%s", path, entry->d_name);
@@ -33,7 +34,7 @@ void remove_recursive(const char *path) {
     printf("Deleted: %s\n", path);
 }
 
-// Main traversal function
+//! Main traversal function
 void find_and_delete_node_modules(const char *base_path) {
     struct dirent *entry;
     DIR *dir = opendir(base_path);
@@ -41,7 +42,7 @@ void find_and_delete_node_modules(const char *base_path) {
     if (!dir) return;
 
     while ((entry = readdir(dir)) != NULL) {
-        // Skip hidden/system directories
+        //! Skip hidden/system directories
         if (strcmp(entry->d_name, ".") == 0 || strcmp(entry->d_name, "..") == 0)
             continue;
 
