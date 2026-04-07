@@ -30,7 +30,7 @@ async function nuke(dir) {
     if (err.code === 'EACCES') {
       console.error(`Permission denied: ${dir}`);
     } if (err.code !== 'ENOENT') { // Ignore if folder was already deleted
-        console.error(`\x1b[33m[nmcleaner] Warning:\x1b[0m Could not access ${dir}`);
+        console.error(`\x1b[33m[nmclean] Warning:\x1b[0m Could not access ${dir}`);
     } else {
       console.error(`Error processing ${dir}:`, err.message);
     }
@@ -39,9 +39,9 @@ async function nuke(dir) {
 
 // Start from current working directory
 const targetDir = process.cwd();
-console.log(`\x1b[36m--- node-modules-cleaner (nmcleaner) ---\x1b[0m`);
+console.log(`\x1b[36m--- Node Modules Cleaner (nmclean) ---\x1b[0m`);
 console.log(`Scanning: ${targetDir}\n`);
 
 nuke(targetDir).then(() => {
-  console.log('\n\x1b[32m[nmcleaner] Success: All node_modules removed.\x1b[0m');
+  console.log('\n\x1b[32m[nmclean] Success: All node_modules removed.\x1b[0m');
 });

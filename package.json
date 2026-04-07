@@ -1,24 +1,33 @@
 {
-  "name": "node-modules-cleaner",
+  "name": "nmclean",
   "version": "0.0.1",
   "description": "Recursively find and delete node_modules",
   "main": "index.js",
   "bin": {
-    "nmcleaner": "./index.js"
+    "nmclean": "./index.js"
   },
   "scripts": {
     "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mdsiaofficial/node-modules-cleaner.git"
+    "url": "git+https://github.com/mdsiaofficial/nmclean.git"
   },
-  "keywords": ["clean", "nmcleaner", "node_modules_cleaner", "node-modules-cleaner", "node_modules", "delete", "recursive"],
+  "keywords": [
+    "nmclean",
+    "clean",
+    "nmcleaner",
+    "node_modules_cleaner",
+    "node-modules-cleaner",
+    "node_modules",
+    "delete",
+    "recursive"
+  ],
   "author": "Md Shoriful Islam Ashiq",
   "license": "MIT",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/mdsiaofficial/node-modules-cleaner/issues"
+    "url": "https://github.com/mdsiaofficial/nmclean/issues"
   },
-  "homepage": "https://github.com/mdsiaofficial/node-modules-cleaner#readme"
+  "homepage": "https://github.com/mdsiaofficial/nmclean#readme"
 }
