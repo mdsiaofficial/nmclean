@@ -1,6 +1,6 @@
 # nmclean (Node Modules Cleaner)
 
-[![npm version](https://badge.fury.io/js/nmclean.svg)](https://badge.fury.io/js/nmclean)
+[![npm version](https://img.shields.io/npm/v/nmclean.svg)](https://www.npmjs.com/package/nmclean)
 [![downloads](https://img.shields.io/npm/dy/nmclean.svg)](https://www.npmjs.com/package/nmclean)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mdsiaofficial/nmclean/blob/main/LICENSE) 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://nmclean.vervel.app/how-to-contribute.html#your-first-pull-request)
