@@ -4,6 +4,7 @@
 [![downloads](https://img.shields.io/npm/dy/nmclean.svg)](https://www.npmjs.com/package/nmclean)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mdsiaofficial/nmclean/blob/main/LICENSE) 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://nmclean.vervel.app/how-to-contribute.html#your-first-pull-request)
+![GitHub Repo stars](https://img.shields.io/github/stars/mdsiaofficial/nmclean)
 
 
 A simple and efficient Node.js CLI tool to recursively find and delete `node_modules` directories from your project and its subdirectories.
