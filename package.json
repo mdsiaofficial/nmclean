@@ -1,6 +1,6 @@
 {
   "name": "nmclean",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Recursively find and delete node_modules",
   "main": "index.js",
   "bin": {
