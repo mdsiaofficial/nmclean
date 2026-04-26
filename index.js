@@ -15,6 +15,11 @@ async function nuke(dir) {
       const fullPath = path.join(dir, entry.name);
 
       if (entry.isDirectory()) {
+        // Skip hidden directories (dot folders)
+        if (entry.name.startsWith('.')) {
+          continue;
+        }
+
         if (entry.name === 'node_modules') {
           console.log(`\x1b[31mDeleting:\x1b[0m ${fullPath}`);
           // recursive: true handles the "rm -rf" logic automatically
