@@ -95,3 +95,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [npm Package](https://www.npmjs.com/package/nmclean)
 - [GitHub Repository](https://github.com/mdsiaofficial/nmclean)
 - [Issues](https://github.com/mdsiaofficial/nmclean/issues)
+
+```
+another problem arised. inside a node_modules folder there is also dot folder. for example: 
+```
+ashiq@dell:~/works/resume-analyzer/.kilo/node_modules$ ls -a
+.            detect-libc     ini               msgpackr           node-gyp-build-optional-packages  shebang-command   uuid
+..           effect          isexe             @msgpackr-extract  .package-lock.json                shebang-regex     which
+.bin         fast-check      @kilocode         msgpackr-extract   path-key                          @standard-schema  yaml
+cross-spawn  find-my-way-ts  kubernetes-types  multipasta         pure-rand                         toml              zod
+ashiq@dell:~/works/resume-analyzer/.kilo/node_modules$ 
+
+```
+you can see here .bin folder inside a node_modules folder, that is also a dot folder. so - another fix i want is: when enter the node_modules folder 
+```
